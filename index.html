@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarDashCam Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the CarDashCam Android app.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --text: #17212b;
+      --muted: #5b6773;
+      --accent: #0f6cbd;
+      --border: #d8e1ea;
+      --shadow: 0 18px 40px rgba(12, 32, 54, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(15, 108, 189, 0.12), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .page {
+      width: min(900px, calc(100% - 32px));
+      margin: 40px auto;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 40px 32px 24px;
+      background: linear-gradient(135deg, #0f6cbd, #0b4f8a);
+      color: #ffffff;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1rem;
+    }
+
+    .content {
+      padding: 32px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+      color: var(--accent);
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    p, ul {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    code {
+      padding: 0.15rem 0.35rem;
+      border-radius: 6px;
+      background: #eef4fb;
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .footer {
+      padding: 0 32px 32px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 900px);
+        margin: 20px auto;
+      }
+
+      .hero,
+      .content,
+      .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <header class="hero">
+        <h1>Privacy Policy for CarDashCam</h1>
+        <p>Effective date: May 21, 2026</p>
+      </header>
+
+      <section class="content">
+        <p>
+          CarDashCam is a dashcam-style recording application. This policy explains what data the app
+          accesses, why it is needed, and how it is handled.
+        </p>
+
+        <h2>Data We Access</h2>
+        <p>CarDashCam may access the following data or device capabilities after the user grants permission:</p>
+        <ul>
+          <li>Camera: used to show the camera preview and record videos.</li>
+          <li>Microphone: used to record video audio and recognize hands-free voice commands.</li>
+          <li>Location: used to calculate and display live driving speed.</li>
+          <li>Video library/media access: used to show, share, rename, and delete videos saved by the app.</li>
+          <li>Audio settings: used briefly to reduce repeated speech recognizer start sounds.</li>
+          <li>Internet: used for Google AdMob ads.</li>
+        </ul>
+
+        <h2>Data Stored on the Device</h2>
+        <p>CarDashCam stores the following locally on the device:</p>
+        <ul>
+          <li>User profile and login data in a local Room database.</li>
+          <li>Passwords as salted PBKDF2 hashes, not plain text.</li>
+          <li>App preferences such as first-launch state, selected language, orientation mode, camera quality, tutorial state, and auto-delete settings.</li>
+          <li>Recorded video speed metadata in local DataStore.</li>
+          <li>Videos in the Android media library under <code>Movies/CarDashCam</code>.</li>
+        </ul>
+
+        <h2>Data Sharing</h2>
+        <p>CarDashCam does not upload user videos, location, account data, or speed metadata to an app-owned server.</p>
+        <p>Users can explicitly share a video through the Android system share sheet. In that case, the selected receiving app controls how the shared video is handled.</p>
+
+        <h2>Ads and Third-Party Services</h2>
+        <p>CarDashCam uses Google AdMob for advertising. AdMob may collect or process data according to Google policies and SDK behavior. Before production release, the Play Console Data Safety form must accurately disclose all AdMob data practices.</p>
+        <p>Current development builds use Google test ad IDs.</p>
+
+        <h2>Location Data</h2>
+        <p>Location is used only to calculate live speed while the app is running. CarDashCam does not store full location history, route history, or raw GPS coordinates.</p>
+
+        <h2>Voice Commands</h2>
+        <p>Voice recognition is used only for hands-free recording control. The current implementation uses Android SpeechRecognizer. Speech recognition behavior may vary by Android device and speech service provider.</p>
+
+        <h2>Permissions and User Control</h2>
+        <p>Users can deny or revoke permissions at any time in Android Settings. If a permission is denied, related features may be unavailable or degraded:</p>
+        <ul>
+          <li>Without camera access, recording cannot work.</li>
+          <li>Without microphone access, audio and voice commands cannot work.</li>
+          <li>Without location access, live speed cannot be shown.</li>
+          <li>Without video library access, Gallery visibility may be limited.</li>
+        </ul>
+
+        <h2>Data Retention and Deletion</h2>
+        <p>Videos remain on the device until the user deletes them or enables auto-delete retention in the app. Gallery deletion uses Android MediaStore deletion flows, including system confirmation where required by Android.</p>
+        <p>Local account data remains on the device unless the app data is cleared or the app is uninstalled.</p>
+
+        <h2>Children's Privacy</h2>
+        <p>CarDashCam is not designed for children and should not be marketed to children.</p>
+
+        <h2>Security</h2>
+        <p>The app uses local-only storage for account data and stores passwords as salted PBKDF2 hashes. Users should still avoid reusing sensitive passwords because this is a local convenience login, not a cloud identity system.</p>
+
+        <h2>Contact</h2>
+        <p>For privacy questions or feedback, contact <a href="mailto:gimsdoe@gmail.com">gimsdoe@gmail.com</a>.</p>
+
+        <h2>Changes</h2>
+        <p>This policy may be updated before release or when app behavior changes. The effective date will be updated when material changes are made.</p>
+      </section>
+
+      <footer class="footer">
+        This page is intended to provide a public privacy policy URL for the CarDashCam app.
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
