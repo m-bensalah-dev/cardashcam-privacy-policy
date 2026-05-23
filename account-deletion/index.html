@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarDashCam Account and Data Deletion</title>
+  <meta name="description" content="Account and data deletion instructions for the CarDashCam Android app.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --text: #17212b;
+      --muted: #5b6773;
+      --accent: #0f6cbd;
+      --border: #d8e1ea;
+      --shadow: 0 18px 40px rgba(12, 32, 54, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(15, 108, 189, 0.12), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .page {
+      width: min(900px, calc(100% - 32px));
+      margin: 40px auto;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 40px 32px 24px;
+      background: linear-gradient(135deg, #0f6cbd, #0b4f8a);
+      color: #ffffff;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1rem;
+    }
+
+    .content {
+      padding: 32px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+      color: var(--accent);
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    p, ol, ul {
+      margin: 0 0 16px;
+    }
+
+    ol, ul {
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .footer {
+      padding: 0 32px 32px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 900px);
+        margin: 20px auto;
+      }
+
+      .hero,
+      .content,
+      .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <article class="card">
+      <header class="hero">
+        <h1>Account and Data Deletion</h1>
+        <p>CarDashCam</p>
+      </header>
+
+      <section class="content">
+        <p>
+          DashPilot allows users to delete their account and associated local data directly from the application.
+        </p>
+
+        <h2>How to delete your account</h2>
+        <ol>
+          <li>Open the Car Dash Cam app.</li>
+          <li>Go to Settings.</li>
+          <li>Select <strong>Delete Account</strong>.</li>
+          <li>Confirm the deletion request.</li>
+        </ol>
+
+        <h2>When the account is deleted</h2>
+        <ul>
+          <li>The local user profile is permanently removed.</li>
+          <li>Associated account data stored on the device is deleted.</li>
+          <li>The user is signed out from this device.</li>
+        </ul>
+
+        <h2>Support</h2>
+        <p>
+          For support or questions, contact
+          <a href="mailto:bensalah.mohammed.dev@gmail.com">bensalah.mohammed.dev@gmail.com</a>.
+        </p>
+
+        <h2>Related Page</h2>
+        <p>
+          Privacy policy:
+          <a href="../">CarDashCam Privacy Policy</a>
+        </p>
+      </section>
+
+      <footer class="footer">
+        This page provides a public account and data deletion URL for the CarDashCam app.
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
